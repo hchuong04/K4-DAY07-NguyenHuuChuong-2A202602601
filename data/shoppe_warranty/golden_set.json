@@ -10,16 +10,6 @@
     "source_file": "buyer-warranty-policy.md"
   },
   {
-    "id": "q1_seller",
-    "type": "metadata_filter",
-    "query": "Quyền và trách nhiệm của tôi đối với việc bảo hành sản phẩm trên sàn là gì?",
-    "metadata_filter": {
-      "audience": "seller"
-    },
-    "gold_answer": "Người Bán có trách nhiệm tiếp nhận bảo hành sản phẩm, dịch vụ cho Người Mua như cam kết trong Chính sách bảo hành sản phẩm của Người bán và/hoặc của nhà sản xuất và thông tin về Chính sách bảo hành này phải được được đăng tải trên Sàn Shopee trong phần mô tả về sản phẩm, dịch vụ.",
-    "source_file": "seller-warranty-policy.md"
-  },
-  {
     "id": "q2",
     "type": "data_lookup",
     "query": "Đối với đơn hàng do Người bán tự vận chuyển, tôi có tối đa bao nhiêu ngày để gửi yêu cầu trả hàng kể từ lúc trạng thái cập nhật 'Lấy hàng thành công' mà tôi chưa bấm nhận hàng?",
