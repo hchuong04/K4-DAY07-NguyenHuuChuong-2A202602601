@@ -99,9 +99,6 @@ def main():
             source = res["metadata"].get("doc_id", "Unknown")
             score = res["score"]
             snippet = res["content"].replace("\n", " ").strip()
-            # Cắt ngắn snippet nếu quá dài
-            if len(snippet) > 150:
-                snippet = snippet[:150] + "..."
             
             # Highlight nếu source trùng với nguồn chuẩn
             match = "✅" if f"{source}.md" == q["source_file"] else "❌"

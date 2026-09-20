@@ -1,44 +1,72 @@
 [
   {
-    "id": "q1_buyer",
+    "id": "Q1",
     "type": "metadata_filter",
     "query": "Quyền và trách nhiệm của tôi đối với việc bảo hành sản phẩm trên sàn là gì?",
     "metadata_filter": {
-      "audience": "buyer"
+      "audience": "seller"
     },
-    "gold_answer": "Người Mua có quyền yêu cầu bảo hành phù hợp với Chính sách bảo hành của Người Bán hoặc Nhà sản xuất khi đáp ứng các điều kiện để được bảo hành theo Chính sách đã công bố của Người Bán và/hoặc Nhà sản xuất.",
-    "source_file": "buyer-warranty-policy.md"
+    "gold_answer": "Người Bán có trách nhiệm tiếp nhận bảo hành sản phẩm, dịch vụ cho Người Mua như cam kết trong Chính sách bảo hành sản phẩm của Người bán và/hoặc của nhà sản xuất và thông tin về Chính sách bảo hành này phải được được đăng tải trên Sàn Shopee trong phần mô tả về sản phẩm, dịch vụ.",
+    "source_file": "seller-warranty-policy.md",
+    "answer_markers": [
+      "trách nhiệm tiếp nhận bảo hành",
+      "Chính sách bảo hành",
+      "phần mô tả"
+    ]
   },
   {
-    "id": "q2",
+    "id": "Q2",
     "type": "data_lookup",
     "query": "Đối với đơn hàng do Người bán tự vận chuyển, tôi có tối đa bao nhiêu ngày để gửi yêu cầu trả hàng kể từ lúc trạng thái cập nhật 'Lấy hàng thành công' mà tôi chưa bấm nhận hàng?",
     "metadata_filter": null,
-    "gold_answer": "- 20 ngày kể từ lúc đơn hàng được cập nhật trạng thái “Lấy hàng thành công” và bạn không bấm “Đã nhận được hàng”.",
-    "source_file": "return-refund-policy.md"
+    "gold_answer": "20 ngày kể từ lúc đơn hàng được cập nhật trạng thái “Lấy hàng thành công” và bạn không bấm “Đã nhận được hàng”.",
+    "source_file": "return-refund-policy.md",
+    "answer_markers": [
+      "20 ngày",
+      "Lấy hàng thành công"
+    ]
   },
   {
-    "id": "q3",
+    "id": "Q3",
     "type": "condition",
     "query": "Sản phẩm của tôi cần đáp ứng các điều kiện cơ bản nào để được bảo hành?",
     "metadata_filter": null,
-    "gold_answer": "- Còn thời hạn bảo hành (dựa trên tem/phiếu bảo hành/hoặc thời điểm kích hoạt bảo hành điện tử).\n- Còn tem/phiếu bảo hành.\n- Sản phẩm bị lỗi kỹ thuật không phải do lỗi của Người Mua.",
-    "source_file": "buyer-warranty-policy.md"
+    "gold_answer": "Còn thời hạn bảo hành (dựa trên tem/phiếu bảo hành/hoặc thời điểm kích hoạt bảo hành điện tử); còn tem/phiếu bảo hành; sản phẩm bị lỗi kỹ thuật không phải do lỗi của Người Mua.",
+    "source_file": "buyer-warranty-policy.md",
+    "answer_markers": [
+      "Còn thời hạn bảo hành",
+      "Còn tem/phiếu bảo hành",
+      "lỗi kỹ thuật"
+    ]
   },
   {
-    "id": "q4",
+    "id": "Q4",
     "type": "process",
     "query": "Đối với khiếu nại không phải là Trả Hàng/Hoàn Tiền, Shopee xử lý vụ việc trong thời hạn bao lâu kể từ khi nhận đủ thông tin từ các bên?",
     "metadata_filter": null,
-    "gold_answer": "Shopee yêu cầu các bên tranh chấp cung cấp đầy đủ thông tin/tài liệu liên quan đến vụ việc, và đưa ra hướng giải quyết dựa trên các thông tin/tài liệu thu thập được trong vòng 07 ngày làm việc kể từ ngày nhận được đầy đủ các thông tin/tài liệu có liên quan đến vụ việc. Trong trường hợp vụ việc có nhiều thông tin, tình tiết phức tạp thì thời hạn giải quyết sẽ được kéo dài hơn.",
-    "source_file": "dispute-process.md"
+    "gold_answer": "Shopee yêu cầu các bên tranh chấp cung cấp đầy đủ thông tin/tài liệu liên quan đến vụ việc, và đưa ra hướng giải quyết trong vòng 07 ngày làm việc kể từ ngày nhận được đầy đủ các thông tin/tài liệu có liên quan; vụ việc phức tạp có thể kéo dài hơn.",
+    "source_file": "dispute-process.md",
+    "answer_markers": [
+      "07 ngày làm việc",
+      "đầy đủ các thông tin/tài liệu"
+    ]
   },
   {
-    "id": "q5",
+    "id": "Q5",
     "type": "listing",
     "query": "Hãy liệt kê tất cả các lý do mà tôi có thể dùng để gửi yêu cầu Trả hàng/Hoàn tiền trên Shopee.",
     "metadata_filter": null,
-    "gold_answer": "- Chưa nhận được hàng\n- Thiếu hàng\n- Người bán gửi sai hàng\n- Hàng lỗi, không hoạt động\n- Khác với mô tả\n- Hàng đã qua sử dụng\n- Hàng giả/nhái\nĐổi ý (Sản phẩm còn nguyên tem, nhãn mác, bao bì)",
-    "source_file": "return-refund-policy.md"
+    "gold_answer": "Chưa nhận được hàng; thiếu hàng; Người bán gửi sai hàng; hàng lỗi, không hoạt động; khác với mô tả; hàng đã qua sử dụng; hàng giả/nhái; đổi ý (sản phẩm còn nguyên tem, nhãn mác, bao bì).",
+    "source_file": "return-refund-policy.md",
+    "answer_markers": [
+      "Chưa nhận được hàng",
+      "Thiếu hàng",
+      "Người bán gửi sai hàng",
+      "Hàng lỗi, không hoạt động",
+      "Khác với mô tả",
+      "Hàng đã qua sử dụng",
+      "Hàng giả/nhái",
+      "Đổi ý"
+    ]
   }
 ]

@@ -8,3 +8,4 @@ python-dotenv==1.2.2
 #   OpenAI                  : pip install openai
 #   Gemini (free tier)      : pip install google-genai
 # See README.md "Tuy Chon Mo Hinh Nhung" or Phu luc B in the lab doc.
+openai
